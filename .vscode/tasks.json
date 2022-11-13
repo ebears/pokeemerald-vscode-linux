@@ -8,7 +8,7 @@
             "windows": {
                 "options": {
                     "shell": {
-                        "executable": "bash.exe",
+                        "executable": "bash",
                         "args": [
                             "-lc"
                         ]
@@ -25,36 +25,13 @@
             ]
         },
         {
-            "label": "Update pokeemerald-vscode",
-            "type": "shell",
-            "promptOnClose": true,
-            "windows": {
-                "options": {
-                    "shell": {
-                        "executable": "bash.exe",
-                        "args": [
-                            "-lc"
-                        ]
-                    }
-                }
-            },
-            "command": "cd .. && rm -rf pokeemerald-vscode && git clone https://github.com/Gamer2020/pokeemerald-vscode && cp pokeemerald-vscode/.vscode-wsl/ ${workspaceFolderBasename}/.vscode/ -r",
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
-        },
-        {
             "label": "Build Debug",
             "type": "shell",
             "promptOnClose": true,
             "windows": {
                 "options": {
                     "shell": {
-                        "executable": "bash.exe",
+                        "executable": "bash",
                         "args": [
                             "-lc"
                         ]
@@ -63,7 +40,7 @@
             },
             "command": "make",
             "args": [
-                "-j32",
+                "-j16",
                 "DINFO=1",
                 "DDEBUGGING=1"
             ],
@@ -86,7 +63,7 @@
             "windows": {
                 "options": {
                     "shell": {
-                        "executable": "bash.exe",
+                        "executable": "bash",
                         "args": [
                             "-lc"
                         ]
@@ -95,7 +72,7 @@
             },
             "command": "make",
             "args": [
-                "-j32"
+                "-j16"
             ],
             "presentation": {
                 "reveal": "always",
@@ -112,7 +89,7 @@
             "windows": {
                 "options": {
                     "shell": {
-                        "executable": "bash.exe",
+                        "executable": "bash",
                         "args": [
                             "-lc"
                         ]
@@ -121,7 +98,7 @@
             },
             "command": "make",
             "args": [
-                "-j32",
+                "-j16",
                 "tools"
             ],
             "presentation": {
@@ -139,7 +116,7 @@
             "windows": {
                 "options": {
                     "shell": {
-                        "executable": "bash.exe",
+                        "executable": "bash",
                         "args": [
                             "-lc"
                         ]
@@ -148,7 +125,7 @@
             },
             "command": "make",
             "args": [
-                "-j32",
+                "-j16",
                 "clean"
             ],
             "presentation": {
